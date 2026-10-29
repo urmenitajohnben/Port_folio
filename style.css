@@ -230,3 +230,9 @@ body{transition:background .3s,color .3s}
   @keyframes show{to{opacity:1}}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* Skill groups */
+.skill-group{margin:1.75rem 0 .75rem;color:var(--ink-soft);font-size:1.05rem}
+.skill-group:first-of-type{margin-top:0}
+.skills.soft li:hover,.skills.soft li:focus-visible{border-color:var(--donut)}
+.skills.soft li span{background:var(--cloud)}
