@@ -3,116 +3,184 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio of John Benedict S. Urmenita, Information Systems student from Las Piñas City.">
 <title>John Benedict S. Urmenita - Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
 
-<header>
-  <img class="portrait" src="jb.jpg" alt="Photo of John Benedict Urmenita">
-  <h1>Urmenita, John Benedict S.</h1>
-  <p class="quote">"To fall is to have once soared"</p>
-  <nav>
+<input type="checkbox" id="theme" class="sr" aria-label="Dark mode">
+<div class="progress" aria-hidden="true"></div>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="site-nav" aria-label="Main">
+  <a class="brand" href="#top">JB</a>
+  <div class="links">
     <a href="#bio">About</a>
     <a href="#education">Education</a>
     <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
     <a href="#likes">Likes &amp; Dislikes</a>
     <a href="#aspirations">Aspirations</a>
-    <a href="#contacts">Contacts</a>
-  </nav>
+    <a href="#contacts">Contact</a>
+  </div>
+  <label class="theme-toggle" for="theme" title="Switch light and dark mode"><span class="knob"></span><span class="sr">Toggle dark mode</span></label>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <a class="portrait-link" href="#photo" aria-label="View my photo larger"><img class="portrait" src="jb.jpg" alt="Photo of John Benedict Urmenita" width="320" height="400"><span class="zoom">Tap to enlarge</span></a>
+    <div class="hero-text">
+      <p class="role">Information Systems student</p>
+      <h1>John Benedict S. Urmenita</h1>
+      <blockquote class="quote">
+        <p>“To fall is to have once soared”</p>
+      </blockquote>
+      <div class="hero-actions">
+        <a class="btn" href="#contacts">Get in touch</a>
+        <a class="btn ghost" href="#education">See my education</a>
+      </div>
+    </div>
+  </div>
+  <div class="board" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<p class="board-hint">Run your cursor across the board.</p>
 </header>
 
-<main>
+<div class="lightbox" id="photo">
+  <a class="close" href="#top" aria-label="Close photo">Close</a>
+  <img src="jb.jpg" alt="Large photo of John Benedict Urmenita">
+</div>
+
+<main id="main">
 
   <section id="bio">
-    <h2>About Me</h2>
-    <p>Hi, I'm John Benedict Urmenita. Write two or three sentences here about where you are from, what you are studying and what you enjoy doing.</p>
+    <h2>About me</h2>
+    <div class="prose">
+      <p>Hi, I'm John Benedict Urmenita, a student from Las Piñas City currently taking a Bachelor's degree in Information Systems.</p>
+      <p>I build simple web pages with HTML and CSS, and I'm comfortable with slides, spreadsheets and documents. Outside of school, I enjoy a good game of chess, a good book and a box of donuts.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Location</dt><dd>Las Piñas City</dd></div>
+      <div><dt>Studying</dt><dd>BS Information Systems</dd></div>
+      <div><dt>Strand</dt><dd>STEM graduate</dd></div>
+    </dl>
   </section>
 
   <section id="education">
-    <h2>My Education</h2>
-    <p class="meta">Click a school to see more.</p>
+    <h2>My education</h2>
+    <p class="hint">Select a school to see more.</p>
 
-    <details class="card" open>
-      <summary>DFCAMCLP</summary>
-      <p class="meta">IN PROGRESS</p>
-      <p>Bachelor's degree in Information System</p>
-    </details>
+    <div class="timeline">
+      <details class="entry" open>
+        <summary><span class="school">DFCAMCLP</span><span class="badge now">In progress</span></summary>
+        <p>Bachelor's degree in Information Systems</p>
+      </details>
 
-    <details class="card">
-      <summary>Senior High School: St. Joseph Academy</summary>
-      <p class="meta">2023 to 2025</p>
-      <p>Strand: STEM</p>
-    </details>
+      <details class="entry">
+        <summary><span class="school">Senior High School: St. Joseph Academy</span><span class="badge">2023 to 2025</span></summary>
+        <p>Strand: STEM</p>
+      </details>
 
-    <details class="card">
-      <summary>Junior High School: St. Joseph Academy</summary>
-      <p class="meta">2019 to 2023</p>
-      <p>TBA</p>
-    </details>
+      <details class="entry">
+        <summary><span class="school">Junior High School: St. Joseph Academy</span><span class="badge">2019 to 2023</span></summary>
+        <p>Details coming soon.</p>
+      </details>
 
-    <details class="card">
-      <summary>Elementary: St. Joseph Academy</summary>
-      <p class="meta">2013 to 2019</p>
-      <p>TBA</p>
-    </details>
+      <details class="entry">
+        <summary><span class="school">Elementary: St. Joseph Academy</span><span class="badge">2013 to 2019</span></summary>
+        <p>Details coming soon.</p>
+      </details>
+    </div>
   </section>
 
   <section id="skills">
-    <h2>My Skills</h2>
+    <h2>My skills</h2>
+    <p class="hint">Hover over or tap a skill to see what I use it for.</p>
     <ul class="skills">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Slide Presentation</li>
-      <li>Spreadsheets</li>
-      <li>Text Processor</li>
+      <li tabindex="0"><strong>HTML</strong><span>Structuring web pages</span></li>
+      <li tabindex="0"><strong>CSS</strong><span>Styling and layout</span></li>
+      <li tabindex="0"><strong>Slide Presentation</strong><span>Clear, organized decks</span></li>
+      <li tabindex="0"><strong>Spreadsheets</strong><span>Tables, formulas, data</span></li>
+      <li tabindex="0"><strong>Text Processor</strong><span>Reports and documents</span></li>
     </ul>
   </section>
 
+  <section id="projects">
+    <h2>My projects</h2>
+    <div class="projects">
+      <article class="project">
+        <h3>This portfolio</h3>
+        <p>A personal website built with plain HTML and CSS, with no JavaScript.</p>
+        <p class="tags">HTML, CSS</p>
+      </article>
+      <article class="project placeholder">
+        <h3>Project title</h3>
+        <p>Replace this card with a school project: what it is, what you did and what you learned.</p>
+        <p class="tags">Add tools used</p>
+      </article>
+    </div>
+  </section>
+
   <section id="likes">
-    <h2>My Likes and Dislikes</h2>
-    <div class="two-col">
-      <div class="card likes">
-        <h3>👍 Likes</h3>
-        <ul>
-          <li>Donuts</li>
-          <li>Chess</li>
-          <li>Books</li>
-        </ul>
-      </div>
-      <div class="card dislikes">
-        <h3>👎 Dislikes</h3>
-        <ul>
-          <li>Smoke</li>
-          <li>Her</li>
-          <li>Pain</li>
-        </ul>
-      </div>
+    <h2>My likes and dislikes</h2>
+    <p class="hint">Switch between the two lists.</p>
+    <div class="tabs">
+      <input class="sr" type="radio" name="lk" id="lk-like" checked>
+      <label for="lk-like">👍 Likes</label>
+      <input class="sr" type="radio" name="lk" id="lk-dis">
+      <label for="lk-dis">👎 Dislikes</label>
+      <ul class="chips likes">
+        <li>Donuts</li>
+        <li>Chess</li>
+        <li>Books</li>
+      </ul>
+      <ul class="chips dislikes">
+        <li>Smoke</li>
+        <li>Her</li>
+        <li>Pain</li>
+      </ul>
     </div>
   </section>
 
   <section id="aspirations">
-    <h2>My Aspirations</h2>
-    <p class="aspiration">To have a stable job with 6 figure salary so that i can provide and help my mother</p>
+    <h2>My aspirations</h2>
+    <p class="aspiration">To have a stable job with a six-figure salary so that I can provide for and help my mother.</p>
   </section>
 
   <section id="contacts">
-    <h2>My Contacts</h2>
-    <ul class="contacts">
-      <li>📧 <strong>Email:</strong> <a href="mailto:groupwais@gmail.com">groupwais@gmail.com</a></li>
-      <li>📱 <strong>Phone:</strong> 09xxxxxxxxx</li>
-      <li>📘 <strong>Facebook:</strong> John Benedict S. Urmenita</li>
-      <li>📍 <strong>Location:</strong> Las Piñas City</li>
-    </ul>
+    <h2>Contact me</h2>
+    <div class="contact-grid">
+      <ul class="contacts">
+        <li>📧 <strong>Email</strong> <a href="mailto:groupwais@gmail.com">groupwais@gmail.com</a></li>
+        <li>📱 <strong>Phone</strong> 09xxxxxxxxx</li>
+        <li>📘 <strong>Facebook</strong> John Benedict S. Urmenita</li>
+        <li>📍 <strong>Location</strong> Las Piñas City</li>
+      </ul>
+
+      <form class="msg" action="mailto:groupwais@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" required autocomplete="name">
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email" required autocomplete="email">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </div>
   </section>
 
 </main>
 
 <footer>
   <p>&copy; 2026 John Benedict S. Urmenita</p>
+  <a href="#top">Back to top</a>
 </footer>
 
-<a class="top" href="#">Back to top</a>
+<a class="to-top" href="#top" aria-label="Back to top">↑</a>
 
 </body>
-</html>
+  </html>
